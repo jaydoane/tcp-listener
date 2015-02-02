@@ -19,7 +19,7 @@ defmodule TcpListener do
 
     port = Application.get_env(@app, :port, @default_port)
     tcp_opts = Application.get_env(@app, :tcp_opts, @default_tcp_opts)
-    info "start port #{port} tcp_opts #{inspect tcp_opts}"
+    info "start port #{port}\n tcp_opts #{inspect tcp_opts}"
 
     import Supervisor.Spec
     children = [
